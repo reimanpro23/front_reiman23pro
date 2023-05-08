@@ -18,6 +18,7 @@ const AltaProducto = () => {
         descripcion: data.descripcion,
         imagen: data.imagen,
         precio: data.precio,
+        usuario:data.usuario,
        
         
       })
@@ -80,6 +81,18 @@ const AltaProducto = () => {
             <p>Campo requerido</p>
           )}
           {errors.precio && errors.precio.type === "minLength" && (
+            <p>Debe tener al menos 5 caracteres</p>
+          )}
+          <input
+            type="text"
+            name="nombre"
+            placeholder="Nombre de Usuario"
+            {...register("nombre de usuario", { minLength: 5, required: true })}
+          />
+          {errors.nombre && errors.nombre.type === "required" && (
+            <p>Campo requerido</p>
+          )}
+          {errors.nombre && errors.nombre.type === "minLength" && (
             <p>Debe tener al menos 5 caracteres</p>
           )}
           <div className="submit">

@@ -19,6 +19,7 @@ const AltaUsuario = () => {
         email: data.email,
         password: data.password,
         direccion: data.direccion,
+        productos: data.productos,
         
       })
       .then((response) => {
@@ -89,6 +90,18 @@ const AltaUsuario = () => {
             name="direccion"
             placeholder="Direccion"
             {...register("direccion", { minLength: 5, required: true })}
+          />
+          {errors.direccion && errors.direccion.type === "required" && (
+            <p>Campo requerido</p>
+          )}
+          {errors.direccion && errors.direccion.type === "minLength" && (
+            <p>Debe tener al menos 5 caracteres</p>
+          )}
+          <input
+            type="text"
+            name="productos"
+            placeholder="Producto"
+            {...register("productos", { minLength: 5, required: true })}
           />
           {errors.direccion && errors.direccion.type === "required" && (
             <p>Campo requerido</p>

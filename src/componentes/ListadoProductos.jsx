@@ -16,6 +16,7 @@ const ListadoProductos = ({producto}) => {
 							<h4>{elemento.descripcion}</h4>
 							<h4>{elemento.imagen}</h4>
 							<h4>{elemento.precio}</h4>
+							<h4>{elemento.usuario}</h4>
 							
 						</div>
 					);

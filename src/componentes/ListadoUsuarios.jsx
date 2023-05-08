@@ -1,3 +1,4 @@
+import Usuarios from './Usuarios';
 import './style.css'
 import 'bootstrap/dist/css/bootstrap.min.css';
 // import '../node_modules/bootstrap/dist/css/bootstrap.min.css';
@@ -17,10 +18,11 @@ const ListadoUsuarios = ({usuario}) => {
 							<h4>{elemento.email}</h4>
 							<h4>{elemento.password}</h4>
 							<h4>{elemento.direccion}</h4>
+							<h4>{elemento.productos}</h4>
 						</div>
 					);
 					// === Otra opción ===
-					// return <ElementoLista key={elemento.id} element={elemento.nombre} />;
+					return <Usuarios key={elemento.id} element={elemento.nombreUsuario} />;
 				})}
 			</ul>
 		</div>
