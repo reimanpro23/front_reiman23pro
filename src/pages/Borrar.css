@@ -1,4 +1,4 @@
-.seccionBuscar {
+.seccionBorrar {
 	margin: 50px;
 	display: flex;
 	flex-direction: column;
@@ -6,7 +6,7 @@
 	/* max-width: 80vw; */
 }
 
-.buscar {
+.borrar {
 	padding: 10px;
 	font-size: 20px;
 }

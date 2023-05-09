@@ -19,26 +19,26 @@ import BuscarUsuarios from "./pages/BuscarUsuarios";
 import BuscarProductos from "./pages/BuscarProductos";
 import Desconocido from "./pages/Notfound";
 import Contactos from "./pages/Contactos";
-import Navbar from "./componentes/Navbar";
-import Usuarios from "./componentes/Usuarios";
-import Productos from "./componentes/Productos";
+// import Navbar from "./componentes/Navbar";
+// import Usuarios from "./componentes/Usuarios";
+// import Productos from "./componentes/Productos";
 import Login from './componentes/Login';
 import Logout from './componentes/Logout';
 
 
 function App() {
   
-  const [usuarios, setUsuarios] = useState(Usuarios);
-  console.log(usuarios);
-  const creaNuevoUsuario = (usuario) => {
-    setUsuarios([...usuarios, usuario]);
-  };
+  // const [usuarios, setUsuarios] = useState(Usuarios);
+  // console.log(usuarios);
+  // const creaNuevoUsuario = (usuario) => {
+  //   setUsuarios([...usuarios, usuario]);
+  // };
   
-  const [productos, setProductos] = useState(Productos);
-  console.log(productos);
-  const creaNuevoProducto = (producto) => {
-    setProductos([...productos, producto]);
-  };
+  // const [productos, setProductos] = useState(Productos);
+  // console.log(productos);
+  // const creaNuevoProducto = (producto) => {
+  //   setProductos([...productos, producto]);
+  // };
 
   const [tieneAcceso, setTieneAcceso] = useState(false);
   const [datos, setDatos] = useState({});
@@ -60,14 +60,14 @@ function App() {
   
   return (
   <div className="contenedor-principal">
-		<div className='alta'>
+		{/* <div className='alta'>
 		<AltaUsuario onNuevoUsuario={creaNuevoUsuario} />
-		</div>
+		</div> */}
 
   {/* <div className="App"> */}
-		<div className='alta'>
+		{/* <div className='alta'>
 		<AltaProducto onNuevoProducto={creaNuevoProducto} />
-		</div>
+		</div> */}
 
 		{/* <div className='listado'>
 		<ListadoProductos producto={Productos}/> 
@@ -112,8 +112,8 @@ function App() {
           <Route path="/about" element={<About />} />
           <Route path="/usuarios" element={<AltaUsuario />} />
           <Route path="/productos" element={<AltaProducto />} />
-          <Route path="/usuario" element={<Navigate to="/usuarios" />} />
-          <Route path="/producto" element={<Navigate to="/productos" />} />
+          {/* <Route path="/usuario" element={<Navigate to="/usuarios" />} />
+          <Route path="/producto" element={<Navigate to="/productos" />} /> */}
           <Route
             path="/login"
             element={<Login gestionarLogin={gestionarLogin} />}
@@ -123,8 +123,8 @@ function App() {
             path="/logout"
             element={<Logout gestionarLogout={gestionarLogout} />}
           />
-          <Route path="/login" element={<Login to="/login"/>} />
-          <Route path="/logout" element={<Logout to="/logout"/>} />
+          {/* <Route path="/login" element={<Login to="/login"/>} />
+          <Route path="/logout" element={<Logout to="/logout"/>} /> */}
           <Route path="/contactos" element={<Contactos to="/contactos"/>} />
           <Route path="/buscar" element={<BuscarProductos to="/buscar"/>} />
           <Route path="/buscar" element={<BuscarUsuarios to="/buscar"/>} />

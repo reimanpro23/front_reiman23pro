@@ -1,4 +1,4 @@
-import Usuarios from './Usuarios';
+// import Usuarios from './Usuarios';
 import './style.css'
 import 'bootstrap/dist/css/bootstrap.min.css';
 // import '../node_modules/bootstrap/dist/css/bootstrap.min.css';
@@ -22,7 +22,7 @@ const ListadoUsuarios = ({usuario}) => {
 						</div>
 					);
 					// === Otra opción ===
-					return <Usuarios key={elemento.id} element={elemento.nombreUsuario} />;
+					// return <Usuarios key={elemento.id} element={elemento.nombreUsuario} />;
 				})}
 			</ul>
 		</div>
