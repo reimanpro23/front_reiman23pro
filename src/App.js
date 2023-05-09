@@ -10,7 +10,7 @@ import {
   BrowserRouter as Router,
   Routes,
   Route,
-  Navigate,
+  // Navigate,
   NavLink,
 } from "react-router-dom";
 import Inicio from "./pages/Inicio";
@@ -75,6 +75,7 @@ function App() {
 
 		<div>
 	   <Router>
+        
         <div className="navbar">
           {tieneAcceso === false ? (
             <div>
@@ -106,7 +107,7 @@ function App() {
           )}
         </div>
       
-        <Navbar />
+        <Navbar/>
         <Routes>
           <Route path="/" element={<Inicio />} />
           <Route path="/about" element={<About />} />
