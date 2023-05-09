@@ -10,7 +10,7 @@ const TablaUsuarios = ({ datos }) => {
   };
 
   return (
-    <table className="tabla">
+    <table className="caja2">
       <tbody>
         <tr>
           <th>nombreUsuario</th>
@@ -23,11 +23,11 @@ const TablaUsuarios = ({ datos }) => {
         {datos.map((dato) => (
           <tr key={dato._id} onClick={() => gestorSeleccion(dato)}>
             <td>{dato.nombreUsuario}</td>
-            {dato.usuario !== null ? (
+            {/* {dato.usuario !== null ? (
               <td>{dato.usuario.nombreUsuario}</td>
             ) : (
               <td>No Asignado</td>
-            )}
+            )} */}
             <td>{dato.cif}</td>
             <td>{dato.email}</td>
             <td>{dato.password}</td>

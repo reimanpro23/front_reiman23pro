@@ -83,7 +83,7 @@ const AltaUsuario = () => {
             <p>Campo password requerido</p>
           )}
           {errors.password && errors.password.type === "minLength" && (
-            <p>La contraseña debe tener como mínimo 8 y maximo 64 caracteres</p>
+            <p>La contraseña debe tener como mínimo 6 y maximo 64 caracteres</p>
           )}
           <input
             type="text"
@@ -101,11 +101,11 @@ const AltaUsuario = () => {
             type="text"
             name="productos"
             placeholder="Producto"
-            {...register("productos", { minLength: 5, required: true })}
+            {...register("productos", { minLength: 5 })}
           />
-          {errors.direccion && errors.direccion.type === "required" && (
+          {/* {errors.direccion && errors.direccion.type === "required" && (
             <p>Campo requerido</p>
-          )}
+          )} */}
           {errors.direccion && errors.direccion.type === "minLength" && (
             <p>Debe tener al menos 5 caracteres</p>
           )}

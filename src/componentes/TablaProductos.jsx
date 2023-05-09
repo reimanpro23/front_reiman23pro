@@ -10,7 +10,7 @@ const TablaProductos = ({ datos }) => {
   };
 
   return (
-    <table className="tablaProductos">
+    <table className="caja2">
       <tbody>
         <tr>
           <th>nombreProducto</th>

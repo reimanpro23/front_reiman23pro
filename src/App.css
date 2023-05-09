@@ -36,3 +36,154 @@
     transform: rotate(360deg);
   }
 }
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background: gray;
+  color: white;
+  text-align: center;
+  padding-top: 100px;
+}
+
+/* Menú de navegación */
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #bb9696;
+  color: #fff;
+  margin-bottom: 10px;
+}
+
+nav ul {
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+
+nav li {
+  margin: 0 10px;
+  list-style: none;
+}
+
+nav a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.contenedor-principal {
+  display: flex;
+  height: 100vh;
+  align-items: center;
+}
+
+.caja1,
+.caja2,
+.caja3 {
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+}
+
+/* .caja1 {
+  background-image: url("/images/avatar-artwork-avatar-2009-by-james-cameron-full-body-portrait-illustration-green-neon-sk-410486338.png");
+  width: 33vw;
+  height: 33vh;
+}
+
+.caja2 {
+  background-image: url("/images/concept-art-lithe-female-alien-looking-at-camera-blue-skin-glowing-yellow-eyes-scaly-skin-intr-794013707.png");
+  width: 33vw;
+  height: 33vh;
+}
+
+.caja3 {
+  background-image: url("/images/cyberpunk-futuristic-narhwal-portrait-with-its-army-8k-realistic-stylish-neon-detailed-sharp-624650558.png");
+  width: 33vw;
+  height: 33vh;
+} */
+
+@media (max-width: 576px) {
+  body {
+    background: red;
+  }
+  .contenedor-principal {
+    flex-direction: column;
+  }
+  .caja1,
+  .caja2,
+  .caja3 {
+    width: 90vw;
+    height: 50vh;
+  }
+  nav {
+    flex-direction: column;
+  }
+}
+
+@media (min-width: 577px) and (max-width: 768px) {
+  body {
+    background: rgb(136, 0, 255);
+  }
+  .contenedor-principal {
+    flex-direction: column;
+  }
+  .caja1,
+  .caja2,
+  .caja3 {
+    width: 90vw;
+    height: 50vh;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 992px) {
+  body {
+    background: rgb(207, 87, 27);
+  }
+  .contenedor-principal {
+    justify-content: center;
+    align-items: flex-start;
+  }
+  .caja1,
+  .caja2,
+  .caja3 {
+    width: 33%;
+  }
+}
+
+@media (min-width: 993px) and (max-width: 1200px) {
+  body {
+    background: rgb(17, 149, 45);
+  }
+  .contenedor-principal {
+    justify-content: center;
+    align-items: flex-start;
+  }
+  .caja1,
+  .caja2,
+  .caja3 {
+    height: 50vh;
+  }
+}
+
+@media (min-width: 1201px) {
+  body {
+    background: rgb(212, 238, 40);
+  }
+  .contenedor-principal {
+    justify-content: center;
+    align-items: flex-start;
+  }
+  .caja1,
+  .caja2,
+  .caja3 {
+    height: 50vh;
+  }
+}

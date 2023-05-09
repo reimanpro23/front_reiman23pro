@@ -4,7 +4,7 @@ import "./Navbar.css";
 
 const Navbar = () => {
   return (
-    <div>
+    <div className="caja1">
       <ul>
         <li>
           {/* // isActive */}
@@ -85,3 +85,6 @@ const Navbar = () => {
 };
 
 export default Navbar;
+
+      
+    

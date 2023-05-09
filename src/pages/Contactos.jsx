@@ -8,7 +8,7 @@ const Contactos = () => {
     navigate("/");
   };
   return (
-    <div>
+    <div className="caja3">
       <h1>Contactos</h1>
 
       <h3>Reinhard Martin</h3>

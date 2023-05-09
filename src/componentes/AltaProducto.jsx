@@ -87,11 +87,11 @@ const AltaProducto = () => {
             type="text"
             name="nombre"
             placeholder="Nombre de Usuario"
-            {...register("nombre de usuario", { minLength: 5, required: true })}
+            {...register("nombre de usuario", { minLength: 5  })}
           />
-          {errors.nombre && errors.nombre.type === "required" && (
+          {/* {errors.nombre && errors.nombre.type === "required" && (
             <p>Campo requerido</p>
-          )}
+          )} */}
           {errors.nombre && errors.nombre.type === "minLength" && (
             <p>Debe tener al menos 5 caracteres</p>
           )}
