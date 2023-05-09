@@ -13,7 +13,7 @@ const AltaUsuario = () => {
 
   const gestorFormulario = async (data) => {
     await axios
-      .post(process.env.REACT_APP_BACKEND_URL + "/api/tienda/usuarios", {
+      .post(process.env.REACT_APP_BACKEND_URL + "/api/tienda/usuarios/", {
         nombreUsuario: data.nombreUsuario,
         cif: data.cif,
         email: data.email,
