@@ -82,10 +82,16 @@ function App() {
               <NavLink className={"navlink"} to="/">
                 Inicio
               </NavLink>
-              <NavLink className={"navlink"} to="/login">
+              <NavLink className={"navlink"} to="/About">
+                About
+              </NavLink>
+              <NavLink className={"navlink"} to="/Contactos">
+                Contactos
+              </NavLink>
+              <NavLink className={"navlink"} to="/Login">
                 Login
               </NavLink>
-              <NavLink className={"navlink"} to="/signup">
+              <NavLink className={"navlink"} to="/AltaUsuario">
                 Crear Cuenta
               </NavLink>
             </div>
@@ -94,13 +100,13 @@ function App() {
               <NavLink className={"navlink"} to="/">
                 Inicio
               </NavLink>
-              <NavLink className={"navlink"} to="/usuarios">
+              <NavLink className={"navlink"} to="/BuscaUsuarios">
                 Usuarios
               </NavLink>
-              <NavLink className={"navlink"} to="/productos">
+              <NavLink className={"navlink"} to="/BuscaProductos">
                 Productos
               </NavLink>
-              <NavLink className={"navlink"} to="/logout">
+              <NavLink className={"navlink"} to="/Logout">
                 Logout
               </NavLink>
             </div>
