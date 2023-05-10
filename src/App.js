@@ -10,7 +10,7 @@ import {
   BrowserRouter as Router,
   Routes,
   Route,
-  // Navigate,
+  Navigate,
   NavLink,
 } from "react-router-dom";
 import Inicio from "./pages/Inicio";
