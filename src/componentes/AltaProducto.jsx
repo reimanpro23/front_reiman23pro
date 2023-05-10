@@ -30,7 +30,7 @@ const AltaProducto = () => {
         descripcion: data.descripcion,
         imagen: data.imagen,
         precio: data.precio,
-        usuario:extraerDatosDeUsuario()[1],
+        usuario: extraerDatosDeUsuario()[1],
        
         
       },
@@ -76,27 +76,18 @@ const AltaProducto = () => {
         <form onSubmit={handleSubmit(gestorFormulario)}>
           <input
             type="text"
-            name="producto"
+            name="nombreProducto"
             placeholder="Nombre de Producto"
-            {...register("producto")}
+            {...register("nombreProducto")}
           />
-          {errors.nombre && <p>{errors.nombre.message}</p>}
+          {errors.nombreProducto && <p>{errors.nombreProducto.message}</p>}
           <input
             type="text"
             name="descripcion"
             placeholder="Descripcion"
             {...register("descripcion")}
           />
-          {errors.nombre && <p>{errors.nombre.message}</p>}
-          
-          <input
-            type="text"
-            name="foto"
-            placeholder="Imagen del producto"
-            {...register("foto")}
-          />
-          {errors.nombre && <p>{errors.nombre.message}</p>}
-          
+          {errors.descripcion && <p>{errors.descripcion.message}</p>}
           <input
             type="number"
             name="precio"
@@ -106,11 +97,18 @@ const AltaProducto = () => {
           {errors.precio && <p>{errors.precio.message}</p>}
           <input
             type="text"
+            name="imagen"
+            placeholder="Imagen del producto"
+            {...register("imagen")}
+          />
+          {errors.imagen && <p>{errors.imagen.message}</p>}
+          <input
+            type="text"
             name="usuario"
             placeholder="Seleccione Usuario..."
             {...register("usuario")}
           />
-           {errors.docente && <p>{errors.docente.message}</p>}
+           {errors.usuario && <p>{errors.usuario.message}</p>}
           
           <div className="submit">
             <input type="submit" value="Crear" id="submit" />

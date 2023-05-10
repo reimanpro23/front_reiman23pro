@@ -7,7 +7,7 @@
     display: flex;
     
   }
-  .listado {
+  .Form {
     background-color:rgb(32, 218, 57);
     padding: 2rem;
     border-radius: 2rem;
@@ -15,13 +15,13 @@
     max-width: 100%
   }
   
-  /* .btn  {
+  .submit  {
     background-color:greenyellow;
     border-radius: 1rem;
     padding: 0.5rem;
     margin-bottom: 1rem;
-  } */
-.titulo{
+  }
+  .title {
     color: blue;
     padding-bottom: 20%;
 }
