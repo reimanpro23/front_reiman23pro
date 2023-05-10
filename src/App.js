@@ -17,7 +17,7 @@ import Inicio from "./pages/Inicio";
 import About from "./pages/About";
 import BuscarUsuarios from "./pages/BuscarUsuarios";
 import BuscarProductos from "./pages/BuscarProductos";
-import Desconocido from "./pages/Notfound";
+import Notfound from "./pages/Notfound";
 import Contactos from "./pages/Contactos";
 // import Navbar from "./componentes/Navbar";
 // import Usuarios from "./componentes/Usuarios";
@@ -100,6 +100,9 @@ function App() {
               <NavLink className={"navlink"} to="/">
                 Inicio
               </NavLink>
+              <NavLink className={"navlink"} to="/AltaProducto">
+                Crear Producto
+              </NavLink>
               <NavLink className={"navlink"} to="/BuscaUsuarios">
                 Usuarios
               </NavLink>
@@ -116,28 +119,37 @@ function App() {
         {/* <Navbar/> */}
         <Routes>
           <Route path="/" element={<Inicio />} />
-          <Route path="/about" element={<About />} />
-          <Route path="/usuarios" element={<AltaUsuario />} />
-          <Route path="/productos" element={<AltaProducto />} />
+          <Route path="/About" element={<About />} />
+          {/* <Route path="/usuarios" element={<AltaUsuario />} /> */}
+          <Route path="/AltaProducto" element={<AltaProducto />} />
+          <Route path="/BuscarUsuarios" element={<BuscarUsuarios />} />
+          <Route path="/BuscarProductos" element={<BuscarProductos />} />
+
           {/* <Route path="/usuario" element={<Navigate to="/usuarios" />} />
           <Route path="/producto" element={<Navigate to="/productos" />} /> */}
           <Route
-            path="/login"
+            path="/Login"
             element={<Login gestionarLogin={gestionarLogin} />}
           />
 
           <Route
-            path="/logout"
+            path="/Logout"
             element={<Logout gestionarLogout={gestionarLogout} />}
           />
+          <Route path="/AltaUsuario" element={<AltaUsuario />} />
+          <Route path="/404" element={<Notfound />} />
+          <Route path="*" element={<Navigate to="/404" replace />} />
+
+
+
           {/* <Route path="/login" element={<Login to="/login"/>} />
           <Route path="/logout" element={<Logout to="/logout"/>} /> */}
-          <Route path="/contactos" element={<Contactos to="/contactos"/>} />
-          <Route path="/buscar" element={<BuscarProductos to="/buscar"/>} />
-          <Route path="/buscar" element={<BuscarUsuarios to="/buscar"/>} />
-          <Route path="/borrar" element={<BorrarProductos to="/borrar"/>} />
-          <Route path="/borrar" element={<BorrarUsuarios to="/borrar"/>} />
-          <Route path="*" element={<Desconocido />} />
+          {/* <Route path="/contactos" element={<Contactos />} />
+          <Route path="/buscar" element={<BuscarProductos />} />
+          <Route path="/buscar" element={<BuscarUsuarios />} />
+          <Route path="/borrar" element={<BorrarProductos />} />
+          <Route path="/borrar" element={<BorrarUsuarios />} />
+          <Route path="*" element={<Desconocido />} /> */}
         </Routes>
       
       </Router>
