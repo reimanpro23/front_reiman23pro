@@ -124,7 +124,8 @@ function App() {
           <Route path="/AltaProducto" element={<AltaProducto />} />
           <Route path="/BuscarUsuarios" element={<BuscarUsuarios />} />
           <Route path="/BuscarProductos" element={<BuscarProductos />} />
-
+          <Route path="/contactos" element={<Contactos />} />
+          
           {/* <Route path="/usuario" element={<Navigate to="/usuarios" />} />
           <Route path="/producto" element={<Navigate to="/productos" />} /> */}
           <Route
