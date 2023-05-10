@@ -94,14 +94,14 @@ function App() {
               <NavLink className={"navlink"} to="/AltaUsuario">
                 Crear Cuenta
               </NavLink>
+              <NavLink className={"navlink"} to="/AltaProducto">
+                Crear Producto
+              </NavLink>
             </div>
           ) : (
             <div>
               <NavLink className={"navlink"} to="/">
                 Inicio
-              </NavLink>
-              <NavLink className={"navlink"} to="/AltaProducto">
-                Crear Producto
               </NavLink>
               <NavLink className={"navlink"} to="/BuscaUsuarios">
                 Usuarios
